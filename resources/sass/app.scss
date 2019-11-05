@@ -116,12 +116,19 @@ strong{
         padding: 0 !important;
     }
 }
-
 @media(max-width:800px){
     .content{
         display:grid;
     }
     #details{
-        padding-left: 6rem;
+        margin-right: 4rem;
+    }
+}
+@media(max-width:992px){
+    #profile-pic{
+        margin-right: 4rem;
+    }
+    .row{
+        justify-content: center !important;
     }
 }
