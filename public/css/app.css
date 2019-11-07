@@ -10835,6 +10835,7 @@ strong {
   }
 }
 
+<<<<<<< HEAD
 @media (max-width: 992px) {
   #profile-pic {
     margin-right: 5rem;
@@ -10842,6 +10843,20 @@ strong {
 
   .row {
     justify-content: center;
+=======
+  #details {
+    margin-right: 4rem;
+  }
+}
+
+@media (max-width: 992px) {
+  #profile-pic {
+    margin-right: 4rem;
+  }
+
+  .row {
+    justify-content: center !important;
+>>>>>>> a8d9b0a8af5364cac20c6b6a0f0ea7cce550b3f2
   }
 }
 
