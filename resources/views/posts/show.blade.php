@@ -9,8 +9,7 @@
             <div class="col-6">
                 <img src="/storage/{{$post->user->image}}" alt="">
                 <h3>{{'@'}}{{$post->user->username}}</h3>
-                <p class="pb-3">{{$post->caption}}</p>
-                <div class="created"><i>{{strtoupper($post->created_at->diffForHumans())}}</i></div>
+                <p>{{$post->caption}}</p>
             </div>
         </div>
     </div>
