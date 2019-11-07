@@ -38,3 +38,9 @@ $(document).ready(function(){
     });
 
 });
+
+if($(window).width() < 500){
+    $("#top-headline").removeClass("d-flex");
+    $("#counters").removeClass("d-flex");
+    $("#counters .pr-4").addClass("pb-1");
+}

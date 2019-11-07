@@ -49377,6 +49377,12 @@ $(document).ready(function () {
   });
 });
 
+if ($(window).width() < 500) {
+  $("#top-headline").removeClass("d-flex");
+  $("#counters").removeClass("d-flex");
+  $("#counters .pr-4").addClass("pb-1");
+}
+
 /***/ }),
 
 /***/ "./resources/js/bootstrap.js":
@@ -49512,17 +49518,12 @@ __webpack_require__.r(__webpack_exports__);
 /***/ (function(module, exports, __webpack_require__) {
 
 <<<<<<< HEAD
-<<<<<<< HEAD
 __webpack_require__(/*! C:\Users\Sindroma Fortifort\Desktop\socialTrim\resources\js\app.js */"./resources/js/app.js");
 module.exports = __webpack_require__(/*! C:\Users\Sindroma Fortifort\Desktop\socialTrim\resources\sass\app.scss */"./resources/sass/app.scss");
 =======
 __webpack_require__(/*! D:\socialTrim\resources\js\app.js */"./resources/js/app.js");
 module.exports = __webpack_require__(/*! D:\socialTrim\resources\sass\app.scss */"./resources/sass/app.scss");
 >>>>>>> a8d9b0a8af5364cac20c6b6a0f0ea7cce550b3f2
-=======
-__webpack_require__(/*! D:\socialTrim\resources\js\app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! D:\socialTrim\resources\sass\app.scss */"./resources/sass/app.scss");
->>>>>>> parent of 5a68608... post likes and comments overlay
 
 
 /***/ })
