@@ -21,10 +21,14 @@
                 <div class="pr-4"><strong>0</strong> following </div>
             </div>
 
-        <div id="title" class="pt-3">{{$user->profile->title}}</div>
-        <i><div id="description" class="pt-4 pb-4">{{$user->profile->description}}</div></i>
-        <div><strong><a href="https://www.lorem.com">{{$user->profile->link}}</a></strong></div>
-        
+            {{-- <div id="title" class="pt-3">{{$user->profile->title}}</div>
+            <i><div id="description" class="pt-4 pb-4">{{$user->profile->description}}</div></i>
+            <div><strong><a href="https://www.lorem.com">{{$user->profile->link}}</a></strong></div> --}}
+
+            <div id="title" class="pt-3">titull</div>
+            <i><div id="description" class="pt-4 pb-4">blla</div></i>
+            <div><strong><a href="https://www.lorem.com">www.facebook.com</a></strong></div>
+            
         </div>
 
     </div>
