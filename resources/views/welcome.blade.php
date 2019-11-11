@@ -8,7 +8,7 @@
         <div class="title m-b-md">
             <img src="svg/socialTrimLogo.png" alt="">
                 @auth
-                <span id="profili-juaj"><a href='/profile/{{Auth::user()->id}}'>Profili juaj!</a></span>
+                <span id="profili-juaj"><a href='/profile/{{Auth::user()->id}}'>Profili juafj!</a></span>
                 @endauth
             </div>
         </div>
