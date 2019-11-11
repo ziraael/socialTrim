@@ -24,7 +24,7 @@ class ProfilesController extends Controller
             'title'=> 'required',
             'description'=> '',
             'link'=> 'url',
-            'image'=> '',
+            // 'image'=> '',
         ]);
 
         auth()->user()->profile->update($data);
