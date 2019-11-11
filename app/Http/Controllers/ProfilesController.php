@@ -3,7 +3,9 @@
 namespace App\Http\Controllers;
 
 use App\User;
+use App\Profile;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Input;
 
 class ProfilesController extends Controller
 {
@@ -13,14 +15,12 @@ class ProfilesController extends Controller
         // $useri = User::findOrFail($user); commented se u zevendsu me \App\User easier way per findorfail
         return view('profiles.index',compact('user'));
     }
-
+    
     public function edit(User $user){ // ska nevoj per \App\ se e kem implementu nalt line 5
         return view('profiles.edit',compact('user'));
     }
-
-    public function update(User $user,Request $request){
-
-        $user->update(['approved' => 1]);
+    
+    public function update(User $user){  
 
         $data = request()->validate([
             'title'=> 'required',

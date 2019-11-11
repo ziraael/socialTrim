@@ -60,6 +60,7 @@
                                 </a>
 
                                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+
                                     <a class="dropdown-item" href="/profile/{{Auth::user()->id}}"><i class="far fa-user"></i><span>Profile</span></a>
 
                                     <a class="dropdown-item" id="add-post" href="/post/create"><i class="fas fa-plus"></i><span>Add new post</span></a>
