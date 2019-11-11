@@ -48,7 +48,7 @@
                 </div>
             </div>
     
-            <div class="row">
+            {{-- <div class="row">
                 <div class="col-8 offset-2">
     
                 <label for="image" class="col-md-4 col-form-label">Profile Image</label>
@@ -58,7 +58,7 @@
                     <strong style="color:#E3342F;font-family:'Nunito';font-size:11.52px;">{{ $message }}</strong>
                 @enderror
                 </div>
-            </div>
+            </div> --}}
     
             <div class="row pt-4">
                 <div class="col-8 offset-2">
