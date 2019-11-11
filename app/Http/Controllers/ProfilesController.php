@@ -18,10 +18,9 @@ class ProfilesController extends Controller
         return view('profiles.edit',compact('user'));
     }
 
-    public function update(User $user,Request $request, SubmitApplication $submitApplication){
+    public function update(User $user,Request $request){
 
-        $submitApplication->update(['approved' => 1]);
-        return redirect()->back();
+        $user->update(['approved' => 1]);
 
         $data = request()->validate([
             'title'=> 'required',
