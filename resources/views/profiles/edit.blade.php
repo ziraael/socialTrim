@@ -15,7 +15,7 @@
 
                     <div class="form-group row pt-4">
                         <label for="title" class="col-md-4 col-form-label">Title</label>
-                            <input id="title" type="text" class="form-control @error('title') is-invalid @enderror" name="title" value="{{ old('title') ?? $user->profile->title }}" autocomplete="title" autofocus>
+                            <input id="title" type="text" class="form-control @error('title') is-invalid @enderror" name="title" value="{{ old('title') ?? optional($user->profile)->title }}" autocomplete="title" autofocus>
     
                         @error('title')
                             <span class="invalid-feedback" role="alert">
@@ -26,7 +26,7 @@
 
                     <div class="form-group row pt-4">
                         <label for="description" class="col-md-4 col-form-label">Description</label>
-                            <input id="description" type="text" class="form-control @error('description') is-invalid @enderror" name="description" value="{{ old('description') ?? $user->profile->description }}" autocomplete="description" autofocus>
+                            <input id="description" type="text" class="form-control @error('description') is-invalid @enderror" name="description" value="{{ old('description') ?? optional($user->profile)->description }}" autocomplete="description" autofocus>
     
                         @error('description')
                             <span class="invalid-feedback" role="alert">
@@ -37,7 +37,7 @@
 
                     <div class="form-group row pt-4">
                         <label for="link" class="col-md-4 col-form-label">Link</label>
-                            <input id="link" type="text" class="form-control @error('link') is-invalid @enderror" name="link" value="{{ old('link') ?? $user->profile->link }}" autocomplete="link" autofocus>
+                            <input id="link" type="text" class="form-control @error('link') is-invalid @enderror" name="link" value="{{ old('link') ?? optional($user->profile)->link }}" autocomplete="link" autofocus>
     
                         @error('link')
                             <span class="invalid-feedback" role="alert">
