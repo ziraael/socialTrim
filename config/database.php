@@ -21,7 +21,7 @@ return [
     |
     */
 
-    'default' => env('DB_CONNECTION', 'pgsql_production'),
+    'default' => env('DB_CONNECTION', 'mysql'),
 
     /*
     |--------------------------------------------------------------------------
@@ -84,21 +84,6 @@ return [
             'sslmode' => 'prefer',
         ],
 
-        'pgsql_production' => [
-            'driver' => 'pgsql',
-            'url' => env('DATABASE_URL'),
-            'host' => $host,
-            'port' => env('DB_PORT', '5432'),
-            'database' => $database,
-            'username' => $username,
-            'password' => $password,
-            'charset' => 'utf8',
-            'prefix' => '',
-            'prefix_indexes' => true,
-            'schema' => 'public',
-            'sslmode' => 'prefer',
-        ],
-        
         'sqlsrv' => [
             'driver' => 'sqlsrv',
             'url' => env('DATABASE_URL'),
