@@ -27,7 +27,7 @@
 
             <div id="title" class="pt-3">titull</div>
             <i><div id="description" class="pt-4 pb-4">blla</div></i>
-            <div><strong><a href="https://www.lorem.com">www.facebook.com</a></strong></div>
+            <div><strong><a href="https://www.lorem.com">www.facebook.cfom</a></strong></div>
             
         </div>
 
