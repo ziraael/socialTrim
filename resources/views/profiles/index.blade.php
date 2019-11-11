@@ -16,7 +16,7 @@
             </div>
 
             <div id="counters" class="d-flex">
-                <div class="pr-4"><strong>{{$user->posts->count()}}</strong> posts </div>
+                <div class="pr-4"><strong>{{$user->posts->count()}}</strong> posts</div>
                 <div class="pr-4"><strong>0</strong> followers </div>
                 <div class="pr-4"><strong>0</strong> following </div>
             </div>
