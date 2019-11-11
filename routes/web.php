@@ -26,3 +26,7 @@ Route::get('/profile/{user}/edit','ProfilesController@edit')->name('profile.edit
 Route::patch('/profile/{user}','ProfilesController@update')->name('profile.update'); // actually edit it(update)
 
 
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
