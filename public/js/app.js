@@ -49386,6 +49386,8 @@ if ($(window).width() < 768) {
   $("#counters").removeClass("d-flex");
   $("#counters div").removeClass("pr-4");
   $("#counters .pr-4").addClass("pb-1");
+  $("#show-post-top").addClass("mt-3");
+  $(".created").css("font-size", "10px");
 }
 
 /***/ }),

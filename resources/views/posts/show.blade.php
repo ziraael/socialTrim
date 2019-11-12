@@ -3,12 +3,12 @@
 @section('content')
 <div class="container d-flex">
         <div class="row">
-            <div class="col-6">
+            <div class="col-md-6">
                 <img src="/storage/{{$post->image}}" class="w-100">
             </div>
-            <div class="col-6">
+            <div class="col-md-6">
 
-                <div class="d-flex pb-3" id="show-post-top">
+                <div class="d-flex pb-3 pt-2" id="show-post-top">
                     <img src="{{$post->user->profile->profileImage()}}" class="rounded-circle w-50">
                 <div class="pl-3"><a href="/profile/{{$post->user->id}}"><span class="text-dark">{{$post->user->username}}</span></a>
                     <span id="bullet-point" class="text-dark">•</span>
