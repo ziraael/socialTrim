@@ -46,5 +46,6 @@ if($(window).width() < 768){
     $("#top-headline div button").addClass("col-6");
     $("#top-headline div button").addClass("mb-3 mt-2");
     $("#counters").removeClass("d-flex");
+    $("#counters div").removeClass("pr-4");
     $("#counters .pr-4").addClass("pb-1");
 }
