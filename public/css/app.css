@@ -10798,14 +10798,9 @@ strong {
   text-align: center;
 }
 
-.fa-heart:hover {
-  transition: 0.6s;
-  color: #bd3f3f;
-}
-
+.fa-heart:hover,
 .fa-comment:hover {
-  transition: 0.6s;
-  color: #3e8ecf;
+  color: #dbdbdb;
 }
 
 #vija {
@@ -10817,15 +10812,15 @@ strong {
   bottom: 0;
 }
 
+#profile-pic {
+  text-align: center;
+  line-height: 15rem;
+}
+
 @media (max-width: 499px) {
   #profile-pic {
     display: inline-table;
     margin: 0 5rem 0 5rem;
-  }
-
-  #details {
-    padding: 0;
-    text-align: center;
   }
 
   #postimet {
@@ -10834,22 +10829,23 @@ strong {
   }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 767px) {
   .content {
     display: grid;
   }
 
   #details {
-    margin-right: 4rem;
+    text-align: center;
+    padding: 0;
   }
 }
 
 @media (max-width: 992px) {
   #profile-pic {
-    margin-right: 4rem;
+    text-align: center;
   }
 
-  .row {
+  #top-row {
     justify-content: center !important;
   }
 }

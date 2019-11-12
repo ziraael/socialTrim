@@ -2,11 +2,11 @@
 
 @section('content')
 <div class="container">
-    <div class="row">
-        <div id="profile-pic" class="col-3 p-5">
+    <div class="row" id="top-row">
+        <div id="profile-pic" class="col-6 col-md-4">
             <img src="https://instagram.fprx1-1.fna.fbcdn.net/vp/d89d271bece1a5174da360cd7baa09c9/5E3F720C/t51.2885-19/s150x150/49426792_277499259608136_1149052224404455424_n.jpg?_nc_ht=instagram.fprx1-1.fna.fbcdn.net" class="rounded-circle">
         </div>
-        <div id="details" class="col-7 pt-5 pb-4">
+        <div id="details" class="col-7 col-md-8 pt-5 pb-4">
             <div class="d-flex" id="top-headline">
                 <h1>{{$user -> username}}</h1>
                 {{-- @auth

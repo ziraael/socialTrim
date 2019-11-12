@@ -49375,13 +49375,11 @@ $(document).ready(function () {
   $('#timeout-btn').click(function () {
     $('#timeout-btn').css('pointer-events', 'none');
   });
-});
+}); // if($(window).width() < 500){
 
-if ($(window).width() < 500) {
-  $("#top-headline").removeClass("d-flex");
-  $("#counters").removeClass("d-flex");
-  $("#counters .pr-4").addClass("pb-1");
-}
+$("#top-headline").removeClass("d-flex");
+$("#counters").removeClass("d-flex");
+$("#counters .pr-4").addClass("pb-1"); // }
 
 /***/ }),
 
