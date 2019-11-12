@@ -6,6 +6,7 @@ use App\User;
 use App\Profile;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Input;
+use Intervention\Image\Facades\Image;
 
 class ProfilesController extends Controller
 {
@@ -17,6 +18,9 @@ class ProfilesController extends Controller
     }
     
     public function edit(User $user){ // ska nevoj per \App\ se e kem implementu nalt line 5
+
+        // $this->authorize('update',$user->profile);
+
         return view('profiles.edit',compact('user'));
     }
     
@@ -29,8 +33,21 @@ class ProfilesController extends Controller
             'image'=> '',
         ]);
 
-        auth()->user()->profile->update($data);
+        
+        // if request has image per shkak se munet me e bo save pa dasht me ndrru foton e profilit
+        if(request('image')){
+            $imagePath = request('image')->store('profile','public');
+            
+            $image = Image::make(public_path("storage/{$imagePath}"))->fit(1000,1000); 
+            $image->save();
 
+            $imageArray = ['image' => $imagePath];
+        }
+            
+        auth()->user()->profile->update(array_merge(
+            $data,
+            $imageArray ?? []
+        ));
         return redirect("/profile/{$user->id}");
     }
 }

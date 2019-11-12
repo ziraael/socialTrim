@@ -37,6 +37,20 @@ class User extends Authenticatable
         'email_verified_at' => 'datetime',
     ];
 
+    public static function boot(){
+        
+        parent::boot();
+
+        static::created(
+            function($user){
+                // e thirr qit User model ky e thirr profile() below edhe ai e thirr create() ndatabaz
+                $user->profile()->create([
+                    'title' => 'Edito titullin dhe profilin nga menuja!',
+                ]);
+            }
+        );
+    }
+
     public function posts(){
         // this user has many posts
         return $this->hasMany(Post::class)->orderBy('created_at','DESC');

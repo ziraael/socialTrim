@@ -4,15 +4,15 @@
 <div class="container">
     <div class="row" id="top-row">
         <div id="profile-pic" class="col-6 col-md-4">
-            <img src="https://instagram.fprx1-1.fna.fbcdn.net/vp/d89d271bece1a5174da360cd7baa09c9/5E3F720C/t51.2885-19/s150x150/49426792_277499259608136_1149052224404455424_n.jpg?_nc_ht=instagram.fprx1-1.fna.fbcdn.net" class="rounded-circle">
+            <img src='{{$user->profile->profileImage()}}' class="rounded-circle">
         </div>
-        <div id="details" class="col-7 col-md-8 pt-5 pb-4">
-            <div class="d-flex" id="top-headline">
-                <h1>{{$user -> username}}</h1>
-                {{-- @auth
-                <a id="add-post" href="/post/create">Add new post</a>
-                <a href="/profile/{{$user->id}}/edit">Edit profile</a>
-                @endauth --}}
+        <div id="details" class="col-7 col-md-8 pt-3 pb-4">
+            <div id="top-headline">
+
+                <div class="d-flex align-items-center">
+                    <h1>{{$user -> username}}</h1>
+                    <button class="btn btn-primary ml-4">Follow</button>
+                </div>
             </div>
 
             <div id="counters" class="d-flex">

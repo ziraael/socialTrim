@@ -65,10 +65,6 @@ class RegisterController extends Controller
      */
     protected function create(array $data)
     {
-        // $profile = new Profile();
-        // $profile->user_id = 1; // need auto incremented id
-        // $profile->save();
-        // $profile->user_id++;
 
         return User::create([
             'name' => $data['name'],

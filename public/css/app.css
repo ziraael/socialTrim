@@ -10731,7 +10731,6 @@ strong {
 }
 
 #top-headline {
-  justify-content: space-between;
   align-items: baseline;
 }
 
@@ -10798,9 +10797,14 @@ strong {
   text-align: center;
 }
 
-.fa-heart:hover,
+.fa-heart:hover {
+  color: #b84545;
+  transition: 0.4s;
+}
+
 .fa-comment:hover {
-  color: #dbdbdb;
+  color: #5187c5;
+  transition: 0.4s;
 }
 
 #vija {
@@ -10815,6 +10819,29 @@ strong {
 #profile-pic {
   text-align: center;
   line-height: 15rem;
+}
+
+#profile-pic img {
+  width: 20vh;
+}
+
+#show-post-top {
+  align-items: center;
+}
+
+#show-post-top div {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+#show-post-top img {
+  max-width: 40px;
+}
+
+#bullet-point {
+  font-size: 15px;
+  padding-left: 3px;
+  padding-right: 3px;
 }
 
 @media (max-width: 499px) {

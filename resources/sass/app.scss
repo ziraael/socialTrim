@@ -88,7 +88,7 @@ strong{
     justify-content: space-between;
 }
 #top-headline{
-    justify-content: space-between;
+    // justify-content: space-between;
     align-items: baseline;
 }
 #profili-juaj a{
@@ -147,8 +147,13 @@ strong{
     -ms-transform: translate(-50%, -50%);
     text-align: center;
 }
-.fa-heart:hover, .fa-comment:hover{
-    color: rgb(219, 219, 219);
+.fa-heart:hover{
+    color: rgb(184, 69, 69);
+    transition: 0.4s;
+}
+.fa-comment:hover{
+    color: rgb(81, 135, 197);
+    transition: 0.4s;
 }
 #vija{
     border-top: 1px solid #efefef;
@@ -160,6 +165,24 @@ strong{
 #profile-pic{
     text-align: center;
     line-height: 15rem;
+}
+#profile-pic img{
+    width: 20vh;
+}
+#show-post-top{
+    align-items: center;
+}
+#show-post-top div{
+    font-size: 20px;
+    font-weight: bold;
+}
+#show-post-top img{
+    max-width: 40px;
+}
+#bullet-point{
+    font-size: 15px;
+    padding-left: 3px;
+    padding-right: 3px;
 }
 // .navbar-brand{
 //     margin-left: 2rem;

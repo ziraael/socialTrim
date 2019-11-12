@@ -49375,11 +49375,17 @@ $(document).ready(function () {
   $('#timeout-btn').click(function () {
     $('#timeout-btn').css('pointer-events', 'none');
   });
-}); // if($(window).width() < 500){
+});
 
-$("#top-headline").removeClass("d-flex");
-$("#counters").removeClass("d-flex");
-$("#counters .pr-4").addClass("pb-1"); // }
+if ($(window).width() < 768) {
+  $("#top-headline").removeClass("d-flex");
+  $("#top-headline div").removeClass("d-flex");
+  $("#top-headline div button").removeClass("ml-4");
+  $("#top-headline div button").addClass("col-6");
+  $("#top-headline div button").addClass("mb-3 mt-2");
+  $("#counters").removeClass("d-flex");
+  $("#counters .pr-4").addClass("pb-1");
+}
 
 /***/ }),
 
