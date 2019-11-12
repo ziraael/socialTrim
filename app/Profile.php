@@ -10,7 +10,7 @@ class Profile extends Model
     protected $guarded = [];
     
     public function profileImage(){
-        return ($this->image) ? '/storage/' . $this->image : '/storage/profile/ng1gVIgMt3N92Am3xsgfrwWAzPGSiN5WRkyZzWcJ.jpeg';
+        return ($this->image) ? '/storage/' . $this->image : 'https://cdn5.vectorstock.com/i/thumb-large/92/09/question-mark-human-head-symbol-vector-13549209.jpg';
     }
 
     public function user(){
