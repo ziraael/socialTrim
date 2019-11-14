@@ -51,12 +51,20 @@ class User extends Authenticatable
         );
     }
 
-    public function posts(){
+    public function posts()
+    {
         // this user has many posts
         return $this->hasMany(Post::class)->orderBy('created_at','DESC');
     }
 
-    public function profile(){
+    public function following()
+    {
+        // belongs to many profiles dmth munet me bo follow many profiles
+        return $this->belongsToMany(Profile::class);
+    }
+
+    public function profile()
+    {
         // this user has one profile
         return $this->hasOne(Profile::class);
     }

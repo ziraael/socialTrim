@@ -12,9 +12,12 @@ class ProfilesController extends Controller
 {
     public function index(\App\User $user)
     {
+        $follows = (auth()->user()) ? auth()->user()->following->contains($user->id) : false;
+        // dd($follows);
         // fetching users nese e gjen e shfaq nese jo 404 error , e njeh User se e merr prej App\User (line 5)
         // $useri = User::findOrFail($user); commented se u zevendsu me \App\User easier way per findorfail
-        return view('profiles.index',compact('user'));
+        // index view munet me perdor $user edhe $follows
+        return view('profiles.index',compact('user','follows'));
     }
     
     public function edit(User $user){ // ska nevoj per \App\ se e kem implementu nalt line 5

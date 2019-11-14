@@ -13,6 +13,11 @@ class Profile extends Model
         return ($this->image) ? '/storage/' . $this->image : 'https://cdn5.vectorstock.com/i/thumb-large/92/09/question-mark-human-head-symbol-vector-13549209.jpg';
     }
 
+    public function followers()
+    {
+        // belongs to many users dmth munet mu bo follow prej many userave
+        return $this->belongsToMany(User::class);
+    }
     public function user(){
         // this profile belongs to a user
         return $this->belongsTo(User::class);

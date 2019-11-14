@@ -11,14 +11,15 @@
 
                 <div class="d-flex align-items-center">
                     <h1>{{$user -> username}}</h1>
-                    <button class="btn btn-primary ml-4">Follow</button>
+
+                <follow-button user-id="{{$user->id}}" follows="{{$follows}}"></follow-button>
                 </div>
             </div>
 
             <div id="counters" class="d-flex">
                 <div class="pr-4"><strong>{{$user->posts->count()}}</strong> posts</div>
-                <div class="pr-4"><strong>0</strong> followers </div>
-                <div class="pr-4"><strong>0</strong> following </div>
+            <div class="pr-4"><strong>{{$user->profile->followers->count()}}</strong> followers </div>
+                <div class="pr-4"><strong>{{$user->following->count()}}</strong> following </div>
             </div>
 
             <div id="title" class="pt-3">{{optional($user->profile)->title}}</div>

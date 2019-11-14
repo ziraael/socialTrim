@@ -17,6 +17,8 @@ Route::get('/', function(){
 
 Auth::routes();  
 
+Route::post('follow/{user}', 'FollowersController@store');
+
 Route::get('/post/create','PostsController@create');
 Route::post('/post','PostsController@store');
 Route::get('/post/{post}','PostsController@show'); // ma mir nfund mos me override route tjera
