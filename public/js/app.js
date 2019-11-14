@@ -49369,12 +49369,13 @@ Vue.component('follow-button', __webpack_require__(/*! ./components/FollowButton
 
 var app = new Vue({
   el: '#app'
-});
+}); // prevent submiting many requests like a retard
+
 $(document).ready(function () {
   $('#timeout-btn').click(function () {
     $('#timeout-btn').css('pointer-events', 'none');
   });
-});
+}); // amateur responsive with javascript LUL
 
 if ($(window).width() < 768) {
   $("#top-headline").removeClass("d-flex");
@@ -49387,6 +49388,13 @@ if ($(window).width() < 768) {
   $("#counters .pr-4").addClass("pb-1");
   $("#show-post-top").addClass("mt-3");
   $(".created").css("font-size", "10px");
+} // hide follow button from yourself
+
+
+if ($.trim($("#navbarDropdown").text()) == $.trim($("#username").text())) {
+  console.log($.trim($("#navbarDropdown").text()));
+  console.log($.trim($("#username").text()));
+  $("#followBTN").css("display", "none");
 }
 
 /***/ }),

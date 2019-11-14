@@ -10,9 +10,9 @@
             <div id="top-headline">
 
                 <div class="d-flex align-items-center">
-                    <h1>{{$user -> username}}</h1>
+                    <h1 id="username">{{$user -> username}}</h1>
 
-                <follow-button user-id="{{$user->id}}" follows="{{$follows}}"></follow-button>
+                <follow-button id="followBTN" user-id="{{$user->id}}" follows="{{$follows}}"></follow-button>
                 </div>
             </div>
 
