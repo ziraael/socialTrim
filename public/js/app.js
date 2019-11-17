@@ -49395,7 +49395,24 @@ if ($.trim($("#navbarDropdown").text()) == $.trim($("#username").text())) {
   console.log($.trim($("#navbarDropdown").text()));
   console.log($.trim($("#username").text()));
   $("#followBTN").css("display", "none");
-}
+} // change nav color on scroll
+
+
+$(function () {
+  $(document).scroll(function () {
+    var $nav = $("#navbari");
+    $nav.toggleClass('scrolled', $(this).scrollTop() * 2 > $nav.height());
+    $nav.addClass('stiky');
+  });
+}); // var navbari = $("#navbari");
+// var sticky = navbari.offsetTop;
+// $(function () {
+//     $(document).scroll(function () {
+//         $("nav").addClass("sticky")
+//   } else {
+//     $("nav").removeClass("sticky");
+//   }
+// });
 
 /***/ }),
 

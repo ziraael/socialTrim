@@ -16,6 +16,66 @@ html, body {
     height: 100vh;
     margin: 0;
 }
+// #app{
+//     margin-bottom: 10rem;
+// }
+.stiky{
+    position: fixed !important;
+    top: 0 !important;
+    width: 100% !important;
+}
+#navbari{
+    background: none !important;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    height: 100px;
+}
+// kur tbohet scroll ndrro navbar color
+#navbari.scrolled {
+    background-color: #fff !important;
+    transition: background-color 400ms linear;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
+    border-bottom: 1px solid rgba(0,0,0,.11);
+  }
+.shadow-sm{
+    box-shadow: none !important;
+}
+#rreshti-main{
+    align-items: center;
+    margin-top: 3rem;
+}
+#main-text{
+    color: #EE4E63;
+    font-weight: bold;
+    text-align: center;
+    font-family:'Poppins';
+    font-size: 4rem;
+}
+#fotoja{
+    height: 500px;
+}
+#seksioni{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    top: 100px;
+
+}
+#seksioni2{
+    width: 100%;
+    height: 100vh;
+    background: #EE4E63;
+}
+#thewave{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+#thewave path{
+    fill: #EE4E63;
+}
 
 .full-height {
     height: 100vh;
@@ -205,6 +265,9 @@ strong{
         text-align: center;
         padding: 0;
     }
+    #navbari{
+        height: auto;
+    }
 }
 @media(max-width:992px){
     #profile-pic{
@@ -212,5 +275,10 @@ strong{
     }
     #top-row{
         justify-content: center !important;
+    }
+}
+@media(max-width:1200px){
+    #rreshti-main{
+        margin-top: 10rem;
     }
 }
