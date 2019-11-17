@@ -10654,6 +10654,13 @@ body {
   margin: 0;
 }
 
+#particles-js {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  z-index: 10;
+}
+
 .stiky {
   position: fixed !important;
   top: 0 !important;
